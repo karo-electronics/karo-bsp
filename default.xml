@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <default revision="pyro" sync-j="2"/>
+  <default revision="rocko" sync-j="1"/>
 
   <remote fetch="git://git.yoctoproject.org"          name="yocto"/>
   <remote fetch="git://git.openembedded.org"          name="oe"/>
