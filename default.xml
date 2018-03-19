@@ -11,7 +11,7 @@
   <project remote="yocto" name="poky"              path="sources/poky"/>
   <project remote="oe"    name="meta-openembedded" path="sources/meta-openembedded"/>
   <project remote="qt"    name="meta-qt5"          path="sources/meta-qt5"/>
-  <project remote="karo"  name="meta-karo"         path="sources/meta-karo" revision="master">
+  <project remote="karo"  name="meta-karo"         path="sources/meta-karo">
     <linkfile dest="setup-environment" src="base/setup-environment"/>
   </project>
 </manifest>
