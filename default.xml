@@ -3,7 +3,7 @@
 
   <default revision="rocko" sync-j="1"/>
 
-  <remote fetch="git://git.yoctoproject.org"          name="yocto"/>
+  <remote fetch="git+ssh://git@github.com/karo-electronics"     name="yocto"/>
   <remote fetch="git://git.openembedded.org"          name="oe"/>
   <remote fetch="git+ssh://git@github.com/karo-electronics"     name="karo"/>
   <remote fetch="https://github.com/meta-qt5"         name="qt"/>
@@ -13,5 +13,6 @@
   <project remote="qt"    name="meta-qt5"          path="sources/meta-qt5"/>
   <project remote="karo"  name="meta-karo"         path="sources/meta-karo">
     <linkfile dest="setup-environment" src="base/setup-environment"/>
+    <copyfile dest="README" src="base/README"/>
   </project>
 </manifest>
