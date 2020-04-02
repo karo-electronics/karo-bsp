@@ -15,6 +15,7 @@
   <project remote="karo" revision="zeus-devel" name="meta-karo" path="layers/meta-karo" >
         <linkfile src="base/setup-environment" dest="setup-environment"/>
   </project>
+  <project remote="karo" revision="zeus-devel" name="meta-karo-distro" path="layers/meta-karo-distro" />
 
   <project remote="QT5" revision="0bdbb344bc0a7261d76d715e570ddc2ecfefae58" name="meta-qt5" path="layers/meta-qt5" />
 
