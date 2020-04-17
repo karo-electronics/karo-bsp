@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="2"/>
+
+  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="git://github.com/openembedded" name="oe"/>
+  <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
+  <remote fetch="git://github.com/karo-electronics" name="karo"/>
+
+  <project remote="yocto" revision="04d71b42e7323087b945e9c507337c1cfb54f48b" name="poky" path="layers/poky"/>
+
+  <project remote="oe" revision="bb65c27a772723dfe2c15b5e1b27bcc1a1ed884c" name="meta-openembedded" path="layers/meta-openembedded"/>
+
+  <project remote="karo" revision="zeus" name="meta-karo" path="layers/meta-karo" >
+        <linkfile src="base/setup-environment" dest="setup-environment"/>
+  </project>
+  <project remote="karo" revision="zeus" name="meta-karo-distro" path="layers/meta-karo-distro" />
+
+  <project remote="QT5" revision="0bdbb344bc0a7261d76d715e570ddc2ecfefae58" name="meta-qt5" path="layers/meta-qt5" />
+
+</manifest>
