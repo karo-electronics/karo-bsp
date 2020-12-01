@@ -8,14 +8,14 @@
   <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
   <remote fetch="git://github.com/karo-electronics" name="karo"/>
 
-  <project remote="karo" revision="refs/tags/KARO-2020-10-09-mainline" name="poky" path="layers/poky"/>
+  <project remote="karo" revision="refs/tags/KARO-2020-12-01-mainline" name="poky" path="layers/poky"/>
 
   <project remote="oe" revision="bb65c27a772723dfe2c15b5e1b27bcc1a1ed884c" name="meta-openembedded" path="layers/meta-openembedded"/>
 
-  <project remote="karo" revision="refs/tags/KARO-2020-10-21" name="meta-karo" path="layers/meta-karo" >
+  <project remote="karo" revision="refs/tags/KARO-2020-12-01" name="meta-karo" path="layers/meta-karo" >
         <linkfile src="base/setup-environment" dest="setup-environment"/>
   </project>
-  <project remote="karo" revision="refs/tags/KARO-2020-10-21" name="meta-karo-distro" path="layers/meta-karo-distro" />
+  <project remote="karo" revision="refs/tags/KARO-2020-12-01" name="meta-karo-distro" path="layers/meta-karo-distro" />
 
   <project remote="QT5" revision="5144a99a696a8a72c0765ea0e8be8ceafaa78f85" name="meta-qt5" path="layers/meta-qt5" />
 
