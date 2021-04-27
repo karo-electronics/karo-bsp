@@ -1,8 +1,12 @@
 ## Ka-Ro Yocto BSP ##
 
-https://karo-electronics.github.io/docs/yocto-guide/index.html
+Our Mainline Yocto BSP.
+
+### BSP Checkout ###
+
+https://karo-electronics.github.io/docs/yocto-guide/mainline/setup.html#bsp-checkout
 
 ---
-http://www.karo-electronics.de
+https://www.karo-electronics.com
 
 Contact support: support@karo-electronics.de
