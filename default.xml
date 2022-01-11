@@ -3,10 +3,10 @@
 
   <default sync-j="2"/>
 
-  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
-  <remote fetch="git://github.com/openembedded" name="oe"/>
-  <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
-  <remote fetch="git://github.com/karo-electronics" name="karo"/>
+  <remote fetch="https://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://github.com/meta-qt5"  name="QT5"/>
+  <remote fetch="https://github.com/karo-electronics" name="karo"/>
 
   <project remote="karo" revision="refs/tags/KARO-2021-06-18" name="poky" path="layers/poky"/>
 
