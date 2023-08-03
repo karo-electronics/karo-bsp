@@ -14,7 +14,7 @@
 
   <project remote="karo" name="poky" path="layers/poky" revision="refs/tags/KARO-2023-06-15"/>
 
-  <project remote="karo" name="meta-karo" path="layers/meta-karo" revision="refs/tags/KARO-2023-07-14">
+  <project remote="karo" name="meta-karo" path="layers/meta-karo" revision="refs/tags/KARO-2023-08-03">
         <linkfile src="base/setup-environment" dest="setup-environment"/>
   </project>
   <project remote="karo" name="meta-karo-distro" path="layers/meta-karo-distro" revision="refs/tags/KARO-2023-06-16"/>
