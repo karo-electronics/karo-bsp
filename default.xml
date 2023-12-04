@@ -7,16 +7,17 @@
   <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://code.qt.io/yocto"  name="qt6"/>
   <remote fetch="https://github.com/karo-electronics" name="karo"/>
+  <remote name="karo-local"  fetch="/net/karonas/repos/git/yocto"/>
 
-  <project remote="oe" name="meta-openembedded" path="layers/meta-openembedded" revision="8f96c05f6d82fde052f2cb1652c13922814accb0"/>
+  <project remote="oe" name="meta-openembedded" path="layers/meta-openembedded" revision="75cf318cef3b4ee81fad2782cf063ecd69ba8842"/>
 
-  <project remote="qt6" name="meta-qt6" path="layers/meta-qt6" revision="9a24a4f06c389ed3f123e5e4a6b67f5f4ec70314"/>
+  <project remote="qt6" name="meta-qt6" path="layers/meta-qt6" revision="1406d0a85525a71fe5d7892d7f915404290a78ad"/>
 
-  <project remote="karo" name="poky" path="layers/poky" revision="refs/tags/KARO-2023-06-15"/>
+  <project remote="karo" name="poky" path="layers/poky" revision="refs/tags/KARO-2023-11-23"/>
 
-  <project remote="karo" name="meta-karo" path="layers/meta-karo" revision="refs/tags/KARO-2023-08-03">
+  <project remote="karo-local" name="meta-karo" path="layers/meta-karo" revision="5e4db811a09c59adb5e6c7ab8befb17d534803b6">
         <linkfile src="base/setup-environment" dest="setup-environment"/>
   </project>
-  <project remote="karo" name="meta-karo-distro" path="layers/meta-karo-distro" revision="refs/tags/KARO-2023-06-16"/>
+  <project remote="karo" name="meta-karo-distro" path="layers/meta-karo-distro" revision="refs/tags/KARO-2023-11-23"/>
 
 </manifest>
