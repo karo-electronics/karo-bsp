@@ -3,21 +3,53 @@
 
   <default sync-j="2"/>
 
-  <remote fetch="https://git.yoctoproject.org" name="yocto"/>
-  <remote fetch="https://github.com/openembedded" name="oe"/>
-  <remote fetch="https://code.qt.io/yocto"  name="qt6"/>
-  <remote fetch="https://github.com/karo-electronics" name="karo"/>
-  <remote name="karo-local"  fetch="/net/karonas/repos/git/yocto"/>
+  <remote name="yocto"          fetch="https://git.yoctoproject.org"/>
+  <remote name="oe"             fetch="https://github.com/openembedded"/>
+  <remote name="qt6"            fetch="https://code.qt.io/yocto"/>
+  <remote name="karo"           fetch="https://github.com/karo-electronics"/>
 
-  <project remote="oe" name="meta-openembedded" path="layers/meta-openembedded" revision="75cf318cef3b4ee81fad2782cf063ecd69ba8842"/>
+  <project remote="oe"
+    name="meta-openembedded"
+    path="layers/meta-openembedded"
+    revision="75cf318cef3b4ee81fad2782cf063ecd69ba8842"
+  />
 
-  <project remote="qt6" name="meta-qt6" path="layers/meta-qt6" revision="1406d0a85525a71fe5d7892d7f915404290a78ad"/>
+  <project
+    remote="qt6"
+    name="meta-qt6"
+    path="layers/meta-qt6"
+    revision="1406d0a85525a71fe5d7892d7f915404290a78ad"
+  />
 
-  <project remote="karo" name="poky" path="layers/poky" revision="refs/tags/KARO-2023-11-23"/>
+  <project
+    remote="karo"
+    name="poky"
+    path="layers/poky"
+    revision="refs/tags/KARO-2024-03-12"
+  />
 
-  <project remote="karo-local" name="meta-karo" path="layers/meta-karo" revision="5e4db811a09c59adb5e6c7ab8befb17d534803b6">
-        <linkfile src="base/setup-environment" dest="setup-environment"/>
+  <project
+    remote="karo"
+    name="meta-karo"
+    path="layers/meta-karo"
+    revision="refs/tags/KARO-2024-03-12"
+  />
+
+  <project
+    remote="karo"
+    name="meta-karo-distro"
+    path="layers/meta-karo-distro"
+    revision="refs/tags/KARO-2024-03-12"
+  />
+
+  <project
+    remote="karo"
+    name="karo-base"
+    path="layers/base"
+    revision="refs/tags/KARO-2024-03-12">
+      <linkfile src="karo-setup-release.sh" dest="karo-setup-release.sh"/>
+      <linkfile src="setup-environment" dest="setup-environment"/>
+      <linkfile src="README" dest="README"/>
   </project>
-  <project remote="karo" name="meta-karo-distro" path="layers/meta-karo-distro" revision="refs/tags/KARO-2023-11-23"/>
 
 </manifest>
