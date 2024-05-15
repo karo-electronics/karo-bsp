@@ -8,7 +8,7 @@
   <remote fetch="https://github.com/meta-qt5"  name="QT5"/>
   <remote fetch="https://github.com/karo-electronics" name="karo"/>
 
-  <project remote="karo" revision="refs/tags/KARO-2022-04-29" name="poky" path="layers/poky"/>
+  <project remote="karo" revision="refs/tags/KARO-2024-05-08" name="poky" path="layers/poky"/>
 
   <project remote="oe" revision="f44e1a2b575826e88b8cb2725e54a7c5d29cf94a" name="meta-openembedded" path="layers/meta-openembedded"/>
 
