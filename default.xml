@@ -12,7 +12,7 @@
 
   <project remote="oe" revision="f44e1a2b575826e88b8cb2725e54a7c5d29cf94a" name="meta-openembedded" path="layers/meta-openembedded"/>
 
-  <project remote="karo" revision="refs/tags/KARO-2022-07-14" name="meta-karo" path="layers/meta-karo" >
+  <project remote="karo" revision="refs/tags/KARO-2024-05-15" name="meta-karo" path="layers/meta-karo" >
         <linkfile src="base/setup-environment" dest="setup-environment"/>
   </project>
   <project remote="karo" revision="refs/tags/KARO-2022-07-14" name="meta-karo-distro" path="layers/meta-karo-distro" />
