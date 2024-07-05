@@ -7,6 +7,7 @@
   <remote name="oe"             fetch="https://github.com/openembedded"/>
   <remote name="qt6"            fetch="https://code.qt.io/yocto"/>
   <remote name="karo"           fetch="https://github.com/karo-electronics"/>
+  <remote name="rauc"           fetch="https://github.com/rauc"/>
 
   <project remote="oe"
     name="meta-openembedded"
@@ -19,6 +20,13 @@
     name="meta-qt6"
     path="layers/meta-qt6"
     revision="1406d0a85525a71fe5d7892d7f915404290a78ad"
+  />
+
+  <project
+    remote="rauc"
+    name="meta-rauc"
+    path="layers/meta-rauc"
+    revision="11dab7734d4dfa46546cb0e2d8dcb3a1825e2355"
   />
 
   <project
