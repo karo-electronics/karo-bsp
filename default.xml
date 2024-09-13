@@ -40,14 +40,14 @@
     remote="karo"
     name="meta-karo"
     path="layers/meta-karo"
-    revision="refs/tags/KARO-2024-09-11"
+    revision="refs/tags/KARO-2024-09-13"
   />
 
   <project
     remote="karo"
     name="meta-karo-distro"
     path="layers/meta-karo-distro"
-    revision="refs/tags/KARO-2024-07-05"
+    revision="refs/tags/KARO-2024-09-13"
   />
 
   <project
