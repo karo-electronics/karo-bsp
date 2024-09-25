@@ -40,7 +40,7 @@
     remote="karo"
     name="meta-karo"
     path="layers/meta-karo"
-    revision="refs/tags/KARO-2024-09-13"
+    revision="refs/tags/KARO-2024-09-25"
   />
 
   <project
