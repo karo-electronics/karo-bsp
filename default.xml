@@ -47,7 +47,7 @@
     remote="karo"
     name="meta-karo-distro"
     path="layers/meta-karo-distro"
-    revision="refs/tags/KARO-2024-09-13"
+    revision="refs/tags/KARO-2024-10-22"
   />
 
   <project
