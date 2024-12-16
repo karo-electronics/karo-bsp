@@ -9,52 +9,54 @@
   <remote name="karo"           fetch="https://github.com/karo-electronics"/>
   <remote name="rauc"           fetch="https://github.com/rauc"/>
 
-  <project remote="oe"
+  <project
     name="meta-openembedded"
+    remote="oe"
     path="layers/meta-openembedded"
     revision="75cf318cef3b4ee81fad2782cf063ecd69ba8842"
   />
 
   <project
-    remote="qt6"
     name="meta-qt6"
+    remote="qt6"
     path="layers/meta-qt6"
     revision="1406d0a85525a71fe5d7892d7f915404290a78ad"
   />
 
   <project
-    remote="rauc"
     name="meta-rauc"
+    remote="rauc"
     path="layers/meta-rauc"
     revision="11dab7734d4dfa46546cb0e2d8dcb3a1825e2355"
   />
 
   <project
-    remote="karo"
     name="poky"
+    remote="karo"
     path="layers/poky"
     revision="refs/tags/KARO-2024-03-12"
   />
 
   <project
-    remote="karo"
     name="meta-karo"
+    remote="karo"
     path="layers/meta-karo"
-    revision="refs/tags/KARO-2024-11-07"
+    revision="refs/tags/KARO-2024-12-16"
   />
 
   <project
-    remote="karo"
     name="meta-karo-distro"
+    remote="karo"
     path="layers/meta-karo-distro"
-    revision="refs/tags/KARO-2024-10-22"
+    revision="refs/tags/KARO-2024-12-16"
   />
 
   <project
-    remote="karo"
     name="karo-base"
+    remote="karo"
     path="layers/base"
-    revision="refs/tags/KARO-2024-11-07">
+    revision="refs/tags/KARO-2024-12-16">
+      <linkfile src="handle-eula.sh" dest="handle-eula.sh"/>
       <linkfile src="karo-setup-release.sh" dest="karo-setup-release.sh"/>
       <linkfile src="setup-environment" dest="setup-environment"/>
       <linkfile src="README" dest="README"/>
