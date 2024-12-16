@@ -14,7 +14,7 @@
     name="meta-openembedded"
     remote="oe"
     path="layers/meta-openembedded"
-    revision="75cf318cef3b4ee81fad2782cf063ecd69ba8842"
+    revision="aa5e8edabbc414d8ec1b2ad63c8743c7baf99626"
   />
 
   <project
