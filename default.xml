@@ -31,6 +31,13 @@
   />
 
   <project
+    name="meta-st-stm32mp"
+    remote="stm"
+    path="layers/meta-st/meta-st-stm32mp"
+    revision="1f152e07019dc06fd331b4926ec7e76ceae3d259"
+  />
+
+  <project
     name="poky"
     remote="karo"
     path="layers/poky"
