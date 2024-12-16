@@ -8,6 +8,7 @@
   <remote name="qt6"            fetch="https://code.qt.io/yocto"/>
   <remote name="karo"           fetch="https://github.com/karo-electronics"/>
   <remote name="rauc"           fetch="https://github.com/rauc"/>
+  <remote name="stm"		fetch="https://github.com/STMicroelectronics"/>
 
   <project
     name="meta-openembedded"
