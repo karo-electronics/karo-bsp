@@ -8,66 +8,75 @@
   <remote name="qt6"            fetch="https://code.qt.io/yocto"/>
   <remote name="karo"           fetch="https://github.com/karo-electronics"/>
   <remote name="rauc"           fetch="https://github.com/rauc"/>
-  <remote name="stm"		fetch="https://github.com/STMicroelectronics"/>
+  <remote name="stm"            fetch="https://github.com/STMicroelectronics"/>
 
   <project
     name="meta-openembedded"
     remote="oe"
     path="layers/meta-openembedded"
-    revision="aa5e8edabbc414d8ec1b2ad63c8743c7baf99626"
+    revision="3c293e14492f01e22a64004e2330fb620c27578a"
+    upstream="scarthgap"
   />
 
   <project
     name="meta-qt6"
     remote="qt6"
     path="layers/meta-qt6"
-    revision="1406d0a85525a71fe5d7892d7f915404290a78ad"
+    revision="ce16ade17bd9d689e62a5d21344ddb1c67b447e8"
+    upstream="6.8.0"
   />
 
   <project
     name="meta-rauc"
     remote="rauc"
     path="layers/meta-rauc"
-    revision="11dab7734d4dfa46546cb0e2d8dcb3a1825e2355"
+    revision="8f35e94b406ef9ec466a6125971b40f51ae139eb"
+    upstream="scarthgap"
   />
 
   <project
     name="meta-st-stm32mp"
     remote="stm"
     path="layers/meta-st/meta-st-stm32mp"
-    revision="1f152e07019dc06fd331b4926ec7e76ceae3d259"
+    revision="b73bad826ff491d009cf46514ad63c02a3dd242f"
+    upstream="scarthgap"
   />
 
   <project
     name="poky"
     remote="karo"
     path="layers/poky"
-    revision="refs/tags/KARO-2024-03-12"
+    revision="refs/tags/KARO-2025-01-21"
+    upstream="scarthgap"
   />
 
   <project
     name="meta-karo"
     remote="karo"
     path="layers/meta-karo"
-    revision="refs/tags/KARO-2025-01-03"
+    revision="refs/tags/KARO-2025-03-06"
+    upstream="scarthgap"
   />
 
   <project
     name="meta-karo-distro"
     remote="karo"
     path="layers/meta-karo-distro"
-    revision="refs/tags/KARO-2024-12-16"
+    revision="refs/tags/KARO-2025-03-06"
+    upstream="scarthgap"
   />
 
   <project
     name="karo-base"
     remote="karo"
     path="layers/base"
-    revision="refs/tags/KARO-2024-12-16">
-      <linkfile src="handle-eula.sh" dest="handle-eula.sh"/>
-      <linkfile src="karo-setup-release.sh" dest="karo-setup-release.sh"/>
-      <linkfile src="setup-environment" dest="setup-environment"/>
-      <linkfile src="README" dest="README"/>
+    revision="refs/tags/KARO-2025-03-06"
+    upstream="scarthgap"
+    >
+    <linkfile src="handle-eula.sh" dest="handle-eula.sh"/>
+    <linkfile src="karo-setup-release.sh" dest="karo-setup-release.sh"/>
+    <linkfile src="setup-environment" dest="setup-environment"/>
+    <linkfile src="README" dest="README"/>
   </project>
 
 </manifest>
