@@ -54,7 +54,7 @@
     name="meta-karo"
     remote="karo"
     path="layers/meta-karo"
-    revision="refs/tags/KARO-2025-07-11"
+    revision="refs/tags/KARO-2025-07-18"
     upstream="scarthgap"
   />
 
