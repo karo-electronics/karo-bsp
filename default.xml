@@ -62,7 +62,7 @@
     name="meta-karo"
     remote="karo"
     path="layers/meta-karo"
-    revision="refs/tags/KARO-2025-10-30"
+    revision="refs/tags/KARO-2026-03-04"
     upstream="scarthgap"
   />
 
@@ -70,7 +70,7 @@
     name="meta-karo-distro"
     remote="karo"
     path="layers/meta-karo-distro"
-    revision="refs/tags/KARO-2025-10-30"
+    revision="refs/tags/KARO-2025-11-12"
     upstream="scarthgap"
   />
 
