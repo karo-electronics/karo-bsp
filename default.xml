@@ -78,13 +78,15 @@
     name="karo-base"
     remote="karo"
     path="layers/base"
-    revision="refs/tags/KARO-2025-10-30"
+    revision="refs/tags/KARO-2026-05-28"
     upstream="scarthgap"
     >
     <linkfile src="handle-eula.sh" dest="handle-eula.sh"/>
     <linkfile src="karo-setup-release.sh" dest="karo-setup-release.sh"/>
     <linkfile src="setup-environment" dest="setup-environment"/>
     <linkfile src="README" dest="README"/>
+    <copyfile src="devcontainer/devcontainer.json" dest=".devcontainer/devcontainer.json"/>
+    <copyfile src="devcontainer/Dockerfile" dest=".devcontainer/Dockerfile"/>
   </project>
 
 </manifest>
