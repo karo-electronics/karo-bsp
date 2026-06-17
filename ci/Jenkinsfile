@@ -1,4 +1,4 @@
-@Library('yocto-lib@2026.06.1') _
+@Library('yocto-lib@2026.06.2') _
 
 def machineFamilies = getFamilies('stm') + getFamilies('renesas')
 def machineOptions = machineFamilies.collectMany { family -> getMachines(family) }
@@ -89,10 +89,10 @@ pipeline {
                 axes {
                     axis {
                         name 'MACHINE'
-                        values 'qsmp-1351', 'qsmp-1530', 'qsmp-1570', 'qsmp-2350',
-                               'qsmp-2550', 'txmp-1530', 'txmp-1570', 'txmp-1571',
-                               'txmp-2550', 'txmp-2570', 'qsrz-g2l0', 'qsrz-g2l1',
-                               'txrz-g2l0', 'txrz-g2l1', 'txrz-g2l2'
+                        values 'qsmp-1351', 'qsmp-1530', 'qsmp-1570', 'qsmp-2030',
+                               'qsmp-2350', 'qsmp-2550', 'txmp-1530', 'txmp-1570',
+                               'txmp-1571', 'txmp-2550', 'txmp-2570', 'qsrz-g2l0',
+                               'qsrz-g2l1', 'txrz-g2l0', 'txrz-g2l1', 'txrz-g2l2'
                     }
                 }
 
