@@ -89,7 +89,7 @@
     name="meta-karo-distro"
     remote="karo"
     path="layers/meta-karo-distro"
-    revision="refs/tags/KARO-2026-06-15"
+    revision="refs/tags/KARO-2026-06-24"
     upstream="scarthgap"
   />
 
