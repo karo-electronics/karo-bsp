@@ -4,17 +4,44 @@
   <default sync-j="2"/>
 
   <remote name="yocto"          fetch="https://git.yoctoproject.org"/>
-  <remote name="oe"             fetch="https://github.com/openembedded"/>
+  <remote name="oe"             fetch="https://git.openembedded.org"/>
   <remote name="qt6"            fetch="https://code.qt.io/yocto"/>
   <remote name="karo"           fetch="https://github.com/karo-electronics"/>
   <remote name="rauc"           fetch="https://github.com/rauc"/>
   <remote name="stm"            fetch="https://github.com/STMicroelectronics"/>
 
   <project
+    name="openembedded-core"
+    remote="oe"
+    path="layers/poky"
+    revision="ece80784b493c8b7493478fa2ba0dc1d6d80aa79"
+    upstream="scarthgap"
+  />
+
+  <project
+    name="bitbake"
+    remote="oe"
+    path="layers/poky/bitbake"
+    revision="82abbfcdbda949851a03bb2cb2049ea689564ad6"
+    upstream="2.8"
+  />
+
+  <project
+    name="meta-yocto"
+    remote="yocto"
+    path="layers/meta-yocto"
+    revision="ca5a51aadaf651881d640688dc3e1e123aa30bf6"
+    upstream="scarthgap"
+    >
+    <linkfile src="meta-poky" dest="layers/poky/meta-poky"/>
+    <linkfile src="meta-yocto-bsp" dest="layers/poky/meta-yocto-bsp"/>
+  </project>
+
+  <project
     name="meta-openembedded"
     remote="oe"
     path="layers/meta-openembedded"
-    revision="3c293e14492f01e22a64004e2330fb620c27578a"
+    revision="d8cc4e44001c7257273d290ce8c4496e93d32841"
     upstream="scarthgap"
   />
 
@@ -22,15 +49,15 @@
     name="meta-qt6"
     remote="qt6"
     path="layers/meta-qt6"
-    revision="ce16ade17bd9d689e62a5d21344ddb1c67b447e8"
-    upstream="6.8.0"
+    revision="00c3bd954341a2a755fdee6b978af952f51793e7"
+    upstream="6.8.3"
   />
 
   <project
     name="meta-rauc"
     remote="rauc"
     path="layers/meta-rauc"
-    revision="8f35e94b406ef9ec466a6125971b40f51ae139eb"
+    revision="d63878f20eba7a85ecf53566e7a3377e78bb46ac"
     upstream="scarthgap"
   />
 
@@ -38,7 +65,7 @@
     name="meta-st-stm32mp"
     remote="stm"
     path="layers/meta-st/meta-st-stm32mp"
-    revision="b73bad826ff491d009cf46514ad63c02a3dd242f"
+    revision="bcadba4d92cbfeba7b7a876c2e828f37a70d0d0a"
     upstream="scarthgap"
   />
 
@@ -46,16 +73,8 @@
     name="meta-st-stm32mp-tsn-swch"
     remote="stm"
     path="layers/meta-st/meta-st-stm32mp-tsn-swch"
-    revision="e7e6b5b457a89f1aecf015b363ef4bffac1713ae"
+    revision="29d4b06d4b7bcb892529228b3040043cf75597d7"
     upstream="scarthgap"
-  />
-
-  <project
-    name="poky"
-    remote="karo"
-    path="layers/poky"
-    revision="refs/tags/KARO-2025-10-30"
-    upstream="scarthgap-update"
   />
 
   <project
