@@ -71,7 +71,7 @@
 
   <project
     name="meta-st-stm32mp-tsn-swch"
-    remote="stm"
+    remote="karo"
     path="layers/meta-st/meta-st-stm32mp-tsn-swch"
     revision="e7e6b5b457a89f1aecf015b363ef4bffac1713ae"
     upstream="scarthgap"
