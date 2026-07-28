@@ -73,7 +73,7 @@
     name="meta-st-stm32mp-tsn-swch"
     remote="stm"
     path="layers/meta-st/meta-st-stm32mp-tsn-swch"
-    revision="29d4b06d4b7bcb892529228b3040043cf75597d7"
+    revision="e7e6b5b457a89f1aecf015b363ef4bffac1713ae"
     upstream="scarthgap"
   />
 
