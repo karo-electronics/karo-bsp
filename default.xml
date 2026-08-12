@@ -71,9 +71,9 @@
 
   <project
     name="meta-st-stm32mp-tsn-swch"
-    remote="karo"
+    remote="stm"
     path="layers/meta-st/meta-st-stm32mp-tsn-swch"
-    revision="e7e6b5b457a89f1aecf015b363ef4bffac1713ae"
+    revision="cd95ee38f7a0f28809ea1fc2357b13f1399c4f02"
     upstream="scarthgap"
   />
 
@@ -81,7 +81,7 @@
     name="meta-karo"
     remote="karo"
     path="layers/meta-karo"
-    revision="refs/tags/KARO-2026-07-03"
+    revision="refs/tags/KARO-2026-08-12"
     upstream="scarthgap"
   />
 
@@ -89,7 +89,7 @@
     name="meta-karo-distro"
     remote="karo"
     path="layers/meta-karo-distro"
-    revision="refs/tags/KARO-2026-06-24"
+    revision="refs/tags/KARO-2026-08-12"
     upstream="scarthgap"
   />
 
@@ -97,7 +97,7 @@
     name="karo-base"
     remote="karo"
     path="layers/base"
-    revision="refs/tags/KARO-2026-05-28"
+    revision="refs/tags/KARO-2026-08-12"
     upstream="scarthgap"
     >
     <linkfile src="handle-eula.sh" dest="handle-eula.sh"/>
