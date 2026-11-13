@@ -1,8 +1,10 @@
-@Library('yocto-lib@2.1') _
+@Library('yocto-lib@3.1') _
 
 def machineFamilies = getFamilies('stm') + getFamilies('renesas')
 def machineOptions = machineFamilies.collectMany { family -> getMachines(family) }
 def imageOptions = getImages()
+
+def buildMap = machineFamilies.collectEntries { family -> [family, [:]] }
 
 properties([
     parameters([
@@ -99,7 +101,7 @@ pipeline {
                     env.BRANCH_NAME
                 )
 
-                checkoutTestGrid('1.0')
+                checkoutTestGrid('1.1')
             }
         }
 
@@ -107,23 +109,11 @@ pipeline {
             matrix {
                 axes {
                     axis {
-                        name 'MACHINE'
-                        values  'qsmp-1351', 
-                                'qsmp-1530',
-                                'qsmp-1570',
-                                'qsmp-2030',
-                                'qsmp-2350',
-                                'qsmp-2550',
-                                'txmp-1530',
-                                'txmp-1570',
-                                'txmp-1571',
-                                'txmp-2550',
-                                'txmp-2570',
-                                'qsrz-g2l0',
-                                'qsrz-g2l1',
-                                'txrz-g2l0',
-                                'txrz-g2l1',
-                                'txrz-g2l2'
+                        name 'FAMILY'
+                        values  'qsmp',
+                                'txmp',
+                                'qsrz',
+                                'txrz'
                     }
                 }
 
@@ -134,24 +124,19 @@ pipeline {
                             .collect { it.trim() }
                             .findAll { it }
 
-                        return selected.isEmpty() || selected.contains(env.MACHINE)
+                        return selected.isEmpty() || selected.any { it.startsWith(env.FAMILY) }
                     }
                 }
 
                 stages {
                     stage('Build') {
                         steps {
-                            build job: "karo-bsp/yocto-build/2.1",
-                                parameters: [
-                                    string(name: 'WORKSPACE', value: env.WORKSPACE),
-                                    string(name: 'MACHINE', value: env.MACHINE),
-                                    string(name: 'IMAGES', value: env.IMAGES),
-                                    string(name: 'MODE', value: params.MODE),
-                                    booleanParam(name: 'BUILD_FEATURES', value: params.BUILD_FEATURES),
-                                    booleanParam(name: 'SHARED_SSTATE', value: !params.REFRESH_SSTATE)
-                                ],
-                                wait: true,
-                                propagate: true
+                            buildFamily(env.FAMILY, params.MACHINES.split(','), buildMap[env.FAMILY])
+                        }
+                        post {
+                            always {
+                                abortBuilds(buildMap[env.FAMILY])
+                            }
                         }
                     }
                 }
