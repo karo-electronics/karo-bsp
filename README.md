@@ -2,9 +2,7 @@
 
 Our Mainline Yocto BSP.
 
-### BSP Checkout ###
-
-https://karo-electronics.github.io/docs/software-documentation/yocto-guide/bsp/mainline/setup.html#bsp-checkout
+For documentation see our Yocto Guide: https://karo-electronics.github.io/docs/software-documentation/yocto-guide/scarthgap/index.html
 
 ---
 https://www.karo-electronics.com
